@@ -1,25 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bX-Nn-suj">
+                                <rect key="frame" x="18" y="20" width="42" height="30"/>
+                                <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2f-ZF-aNo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epf-0K-m6f">
+                                <rect key="frame" x="264" y="20" width="52" height="30"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bl-IB-MyZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="septimo mes de novios" translatesAutoresizingMaskIntoConstraints="NO" id="fwO-RM-IRC">
+                                <rect key="frame" x="-4" y="90" width="328" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fwO-RM-IRC" secondAttribute="height" multiplier="1:1" id="0Tp-QY-cJ8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dp-YJ-oLf">
+                                <rect key="frame" x="134" y="538" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ae8-y8-uRg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fwO-RM-IRC" secondAttribute="trailing" constant="-20" id="04f-Fv-r6h"/>
+                            <constraint firstItem="2Dp-YJ-oLf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ltj-F6-y8n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="epf-0K-m6f" secondAttribute="trailing" constant="-12" id="NfS-vL-6x0"/>
+                            <constraint firstItem="fwO-RM-IRC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q4X-Iq-69G"/>
+                            <constraint firstItem="fwO-RM-IRC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="bIu-cu-qkV"/>
+                            <constraint firstItem="fwO-RM-IRC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="cik-aq-EH9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Dp-YJ-oLf" secondAttribute="bottom" id="eC3-Tt-bNM"/>
+                            <constraint firstItem="5bX-Nn-suj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gS0-AZ-dyc"/>
+                            <constraint firstItem="epf-0K-m6f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oDA-Gk-XfG"/>
+                            <constraint firstItem="5bX-Nn-suj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="qgc-fe-adI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="fwO-RM-IRC" id="AgW-V0-kaj"/>
+                        <outlet property="loginButton" destination="5bX-Nn-suj" id="oU9-Jh-rFs"/>
+                        <outlet property="logoutButton" destination="epf-0K-m6f" id="Ubm-x3-pNw"/>
+                        <outlet property="refreshButton" destination="2Dp-YJ-oLf" id="Zdu-0e-6AD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="181" y="368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="septimo mes de novios" width="1600" height="1200"/>
+    </resources>
 </document>

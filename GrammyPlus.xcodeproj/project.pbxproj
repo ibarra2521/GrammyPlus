@@ -13,6 +13,7 @@
 		412B2F1E1C362AFF00815A07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412B2F1C1C362AFF00815A07 /* Main.storyboard */; };
 		412B2F201C362AFF00815A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412B2F1F1C362AFF00815A07 /* Assets.xcassets */; };
 		412B2F231C362AFF00815A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412B2F211C362AFF00815A07 /* LaunchScreen.storyboard */; };
+		41E0AE211C363605005654E5 /* septimo mes de novios.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E0AE201C363605005654E5 /* septimo mes de novios.png */; };
 		5750DC6B1C70377AFA0A4486 /* libPods-GrammyPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CFB2544DB631EBD08C21BA /* libPods-GrammyPlus.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		412B2F1F1C362AFF00815A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		412B2F221C362AFF00815A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		412B2F241C362AFF00815A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E0AE201C363605005654E5 /* septimo mes de novios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "septimo mes de novios.png"; sourceTree = "<group>"; };
 		D291A04699C0FAE2C0DBB742 /* Pods-GrammyPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		D97BF300164D3DBDB6BF7DA6 /* Pods-GrammyPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				412B2F1A1C362AFF00815A07 /* ViewController.m */,
 				412B2F1C1C362AFF00815A07 /* Main.storyboard */,
 				412B2F1F1C362AFF00815A07 /* Assets.xcassets */,
+				41E0AE201C363605005654E5 /* septimo mes de novios.png */,
 				412B2F211C362AFF00815A07 /* LaunchScreen.storyboard */,
 				412B2F241C362AFF00815A07 /* Info.plist */,
 				412B2F131C362AFF00815A07 /* Supporting Files */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				412B2F231C362AFF00815A07 /* LaunchScreen.storyboard in Resources */,
+				41E0AE211C363605005654E5 /* septimo mes de novios.png in Resources */,
 				412B2F201C362AFF00815A07 /* Assets.xcassets in Resources */,
 				412B2F1E1C362AFF00815A07 /* Main.storyboard in Resources */,
 			);
